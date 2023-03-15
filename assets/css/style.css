@@ -8,28 +8,59 @@
 
 :root{
     font-size: 62.5%;  /*10px / 16px */
+    --font-default: 'Monteserrat';
+    --font-heading: 'Poppins';
+    --color-default: #fff;
+    --color-secundary: #000;
+}
+
+body{
+    font-family: var(--font-default);
 }
 
 header{
+    display: flex;
     height: 100vh;
-    background-image: url('../images/Background.jpg') ;
+    background-image: url(../images/Background.jpg);
     background-size: cover;
     padding: 23rem 10rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    color: var(--color-default)
+}
+
+h1, 
+h2, 
+h3{
+    font-family: var(--font-heading);
+    font-weight: 900;
 }
 
 h1 {
     font-size: 6rem;
     font-weight: 700;
-    color: #fff;
-    font-family: 'Poppins';
+    color: var(--color-default);
+    font-family: var(--font-heading);
     padding-top: 1rem;
     padding-left: 1rem;
 }
 
+h2{
+    font-family: var(--font-heading);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+p{
+    font-size: 3rem;
+}
+
 span{
-    font-family: 'Montserrat';
     font-size: 4.5rem;
-    color: #fff
+  
 }
 
 .botao{
@@ -38,8 +69,25 @@ span{
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
-    color: #FFFFFF;
+    color: var(--color-default);
+    text-decoration: none;
     
     background: linear-gradient(90.1deg, #E68955 26.31%, #FF5C00 160.95%);
     border-radius: 20px;
 }
+ section{
+    display: flex;
+    gap: 2rem;
+    padding: 8.6rem;
+ }   
+
+ .avatar{
+     border-radius: 100%;
+ }
+
+ #texto-apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+ }
