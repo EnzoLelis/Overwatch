@@ -150,3 +150,41 @@ span{
     opacity: 0;
     transition: opacity .3s ease-in-out, bottom .5s;
  }
+
+ #secao-orcamento{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #212121;
+ }
+
+ #secao-orcamento form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    row-gap: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+ }
+
+ #secao-orcamento output{
+    grid-column: 2;
+ }
+
+ #secao-orcamento h3{
+    position: absolute;
+    top:  -10%;
+    background-color: #FF5C00;
+    color: #fff;
+ }
+
+
+ input[type="number"]{
+    padding: 5rem;
+    background-color: #212121;
+    color: var(--color-default);
+    border: none;
+ }
