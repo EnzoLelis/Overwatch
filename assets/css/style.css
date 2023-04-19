@@ -80,7 +80,7 @@ h3{
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: clamp(3rem, 5vw, 6rem);
     font-weight: 700;
     color: var(--color-default);
     font-family: var(--font-heading);
@@ -225,4 +225,16 @@ span{
     background-color: #212121;
     color: var(--color-default);
     border: none;
+ }
+
+ @media (max-width: 900px) {
+   #secao-projetos ul{
+      flex-direction: column;
+   }
+   .large-only{
+      display: none;
+   }
+   #secao-orcamento form{
+      grid-template-columns: 1fr;
+   }
  }
